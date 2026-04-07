@@ -22,11 +22,17 @@
     "category": "Poster",
     "image": "https://image2url.com/r2/default/images/1775574607855-16d123cd-990d-4d6c-a255-f329646404df.png",
     "link": "#"
- }
- , {
+ },
+ {
     "title": "Your Poster Title",
     "category": "Poster",
     "image": "https://image2url.com/r2/default/images/1775574607855-16d123cd-990d-4d6c-a255-f329646404df.png",
     "link": "#"
-    }
+  },
+  {
+  "title": "Your Poster Title",
+  "category": "Poster",
+  "image": "https://image2url.com/r2/default/images/1775575498021-b0ff2658-6141-495d-a9b7-937afc0908c2.jpeg",
+  "link": "#"
+  }
 ]
