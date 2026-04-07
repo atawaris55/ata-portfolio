@@ -154,10 +154,15 @@ document.getElementById('contactForm').addEventListener('submit', function(e) {
 
 // Typing effect for hero subtitle (optional enhancement)
 const heroSubtitle = document.querySelector('.hero-subtitle');
-const originalText = heroSubtitle.textContent;
+let originalText = '';
 let isTyping = false;
 
+if (heroSubtitle) {
+    originalText = heroSubtitle.textContent;
+}
+
 function typeWriter(text, i) {
+    if (!heroSubtitle) return;
     if (i < text.length) {
         heroSubtitle.innerHTML = text.substring(0, i + 1) + '<span class="cursor">|</span>';
         setTimeout(() => typeWriter(text, i + 1), 100);
@@ -172,6 +177,7 @@ function typeWriter(text, i) {
 }
 
 function eraseText(text) {
+    if (!heroSubtitle) return;
     if (text.length > 0) {
         heroSubtitle.innerHTML = text.substring(0, text.length - 1) + '<span class="cursor">|</span>';
         setTimeout(() => eraseText(text.substring(0, text.length - 1)), 50);
@@ -182,6 +188,7 @@ function eraseText(text) {
 
 // Start typing effect after page load
 window.addEventListener('load', () => {
+    if (!heroSubtitle) return;
     setTimeout(() => {
         typeWriter(originalText, 0);
     }, 1000);
