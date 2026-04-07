@@ -32,7 +32,7 @@
   {
     "title": "Your Poster Title",
     "category": "Poster",
-    "image": "https://image2url.com/r2/default/images/1775575498021-b0ff2658-6141-495d-a9b7-937afc0908c2.jpeg",
-    "link": "#"
+    "image": "images/poster.png",
+    "link": "images/poster.png"
   }
 ]
