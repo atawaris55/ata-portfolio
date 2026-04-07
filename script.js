@@ -236,7 +236,7 @@ function renderPortfolio(items) {
                 <img src="${item.image}" alt="${item.title}">
                 <div class="portfolio-overlay">
                     <span class="category">${item.category}</span>
-                    <a href="${item.link || '#'}" class="view-project" target="_blank" rel="noopener noreferrer">View Project</a>
+                    <a href="${item.link && item.link !== '#' ? item.link : item.image}" class="view-project" target="_blank" rel="noopener noreferrer">View Project</a>
                 </div>
             </div>
         </div>
